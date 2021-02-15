@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CatPhotoApp</title>
+<!-- insert google font -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+    h2{
+        color: blue;
+        font-family: Lobster;
+    }
+    /* membuat class red-text */
+    .red-text{
+        color:red;
+    }
+    /* membuat class smaller-image */
+    .smaller-image{
+        width: 100px;
+    }
+    /* membuat class thick-green-boder */
+    .thick-green-border{
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%; /* border-radius untuk lengkungan di tepi*/        
+    }
+    /* silver background class */
+    .silver-background{
+        background-color: silver;
+    }
+    /* id class for form */
+    #cat-photo-form{
+        background-color: green;
+    }
+    p{
+        font-size: 16px;
+        /* degrade kalau font monospace tidak ditemukan, font yang digunakan fantasy */
+        font-family: monospace,fantasy;
+    }
+</style>
+</head>
+<body>
+    <h2 class="red-text">CatPhotoApp</h2>
+    <main>
+        <p class="red-text">Click here to view more <a href="#">cat photos</a></p>
+        <a href="#">
+            <!-- satu elemen bisa apply beberapa class -->
+            <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back." class="smaller-image thick-green-border">
+        </a>
+        <div class="silver-background"> 
+            <p>Things cats love:</p>
+            <ul>
+                <li>cat nip</li>
+                <li>laser ponters</li>
+                <li>lasagna</li>                
+            </ul>
+        </div>
+        <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+            <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+            <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+            <label><input type="checkbox" name="personality" checked> Loving</label>
+            <label><input type="checkbox" name="personality"> Lazy</label>
+            <label><input type="checkbox" name="personality"> Energetic</label><br>
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+          </form>
+    </main>
+</body>
+</html>
